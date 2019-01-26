@@ -3,6 +3,7 @@ void aMax(int a[], int n);
 void main()
 {
 	int max, m, i;
+	printf("This simple program prints the largest number from the given array\n");
 	printf("Enter size of array\n");
 	scanf("%d", &m);
 	int x[m];
