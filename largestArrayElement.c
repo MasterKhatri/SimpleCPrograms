@@ -1,5 +1,14 @@
 #include <stdio.h>
-void aMax(int a[], int n);
+void aMax(int a[], int n){
+	int i, largest;
+	largest = a[0];
+	for(i=0; i<n; i++){
+		if(largest<a[i])
+			largest = a[i];
+	}
+	printf("%d", largest);
+}
+
 void main()
 {
 	int max, m, i;
@@ -12,13 +21,3 @@ void main()
 		scanf("%d", &x[i]);
 	aMax(x, m);
 }
-void aMax(int a[], int n){
-	int i, largest;
-	largest = a[0];
-	for(i=0; i<n; i++){
-		if(largest<a[i])
-			largest = a[i];
-	}
-	printf("%d", largest);
-}
-
