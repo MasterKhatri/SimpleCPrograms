@@ -2,6 +2,7 @@
 void main()
 {
 	int n, sum = 0, total, miss, i;
+	printf("This program finds missing number in a sorted array of 'n' elements\n");
 	printf("Enter the size of array\n");
 	scanf("%d", &n);
 	int a[n];
