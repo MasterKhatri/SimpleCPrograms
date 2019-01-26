@@ -10,7 +10,7 @@ void main()
 	for(i=0; i<n; i++)
 		scanf("%d", &a[i]);
 	for(i=a[0]; i<=a[n-1]; i++)
-		printf("%d", i++);
+		printf("%d\t", i++);
 	/* Alternate logic:
 	* temp = i*(i++);
 	* printf("%d", temp);
