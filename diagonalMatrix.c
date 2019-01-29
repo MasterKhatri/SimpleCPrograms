@@ -2,8 +2,7 @@
 void main()
 {
 	int i, n, j, r, c;
-	printf("Enter the length of array\n");
-	scanf("%d", &n);
+	printf("This simple program prints major and minor diagonals of a matrix\n");
 	printf("Enter number of rows and columns\n");
 	scanf("%d %d", &r, &c);
 	int a[r][c];
@@ -20,17 +19,17 @@ void main()
 		}
 	}
 	printf("\n");
-	for(int i=0;i<r;i++)
+	for(int i = 0; i<r; i++)
 	{
-		for(int j=0;j<c;j++)
-			 if(j == i-1 && i!=0)
+		for(int j = 0; j<c; j++)
+			 if(j == i-1 && i != 0)
 				printf("%d ", a[i][j]);
 	}
 	printf("\n");
-	for(int i=0;i<r;i++)
+	for(int i = 0; i<r; i++)
 	{
-		for(int j=0;j<c;j++)
-			 if(j == i+1 && i!=n-1)
+		for(int j = 0; j<c; j++)
+			 if(j == i+1 && i != n-1)
 				printf("%d ", a[i][j]);
 	}
 	
