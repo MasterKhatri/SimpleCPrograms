@@ -3,6 +3,7 @@ void main()
 {
 	int i = 0;
 	char str1[20], str2[20];
+	printf("This simple program checks if two given strings are equal\n");
 	printf("Enter string 1\n");
 	gets(str1);
 	printf("Enter string 2\n");
