@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <string.h>
-char* removeExtraSpaces(char *str);
+char *removeExtraSpaces(char *str);
 int countWords(char *str);
 void main()
 {
 	char a[100];
 	int noOfWords;
+	printf("This simple program counts no. of words in the given sentence and also removes extra spaces from start and back of the sentence\n");
 	printf("Enter a string\n");
 	gets(a);
 	//This function prints the length of a string
@@ -17,9 +18,10 @@ void main()
 	noOfWords = countWords(a); //return value of counted words in new var
 	printf("Number of Words: %d\n", noOfWords);
 }
-char* removeExtraSpaces(char *str) {
+
+char *removeExtraSpaces(char *str) {
 	char *p; //This string will be used to copy new string
-	int i=0, j=0;
+	int i = 0, j = 0;
 	p = malloc(strlen(str)+1);
 	while( *(str+i) ) {
 	//This loop removes extra spaces from start and back
@@ -39,8 +41,9 @@ char* removeExtraSpaces(char *str) {
 	return p;
 
 }
+
 int countWords(char *str) {
-	int i=0, count=0;
+	int i = 0, count = 0;
 	while( *(str+i) ) {
 		if( *(str+i)  == ' ')
 			count++; //here count is used to count spaces in the sentence after removing extra spaces in the string
